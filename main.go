@@ -84,7 +84,7 @@ func main() {
 	}
 
 	if optPath != "" {
-		optPath = filepath.Dir(optPath) + "/options.go"
+		optPath = filepath.Dir(optPath) + "/options.pb.st.go"
 
 		content, err := runGoimports(optPath, generator.OptHelpers(*packageName))
 		if err != nil {

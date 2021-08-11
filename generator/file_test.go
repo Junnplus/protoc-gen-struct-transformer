@@ -193,7 +193,7 @@ var _ = Describe("File", func() {
 				absPath, content, err := ProcessFile(f, sp("product"), sp("helper-package"), map[string]MessageOption{}, false, false)
 				Expect(err).NotTo(HaveOccurred())
 				Expect(content).To(Equal(string(expectedContent)))
-				Expect(absPath).To(Equal("product_transformer.go"))
+				Expect(absPath).To(Equal("product.pb.st.go"))
 			})
 		})
 	})
